@@ -210,4 +210,10 @@
     <None Include="build\**\*.cs;build\**\*.targets" Pack="true" PackagePath="build" />
   </ItemGroup>
   <Import Project="..\..\mdoc.targets" Condition=" '$(OS)' == 'Windows_NT' AND '$(GenerateApiDocs)' == 'true'" />
+  <ItemGroup>
+    <None Remove="Initializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Initializer.cs" />
+  </ItemGroup>
 </Project>
